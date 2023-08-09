@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        tag table berfungsi untuk membuat table di html,
+        tr (table row) berfungsi untuk membuat isian table secara horizontal,
+        th (table heading) berfungsi untuk membuat judul di table,
+        td (table down) berfungsi untuk isian table
+    -->
+    <table>
+        <tr>
+            <th>
+                No
+            </th>
+            <th>
+                Nama
+            </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Faliya</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- 
+        border berfungsi memberikan garis penanda di table
+     -->
+    <table border="1">
+        <tr>
+            <th colspan="2">
+                Nomor Antrian
+            </th>
+            <th>
+                Nama
+            </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>satu</td>
+            <td>Faliya</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- align berfungsi menentukan posisi text -->
+    <table border="1" width="75%">
+        <tr>
+            <td align="right">Kanan</td>
+            <td align="center">Tengah</td>
+            <td align="left">Kiri</td>
+        </tr>
+        <tr>
+            <td align="right">Data Rata Kanan</td>
+            <td align="center">Data Rata Tengah</td>
+            <td align="left">Data Rata Kiri</td>
+        </tr>
+    </table>
+
+    <h1>Belajar Form</h1>
+
+   <!-- 
+        form berfungsi untuk membuat form di html
+        action berfungsi untuk membuat inputan di form
+        method berfungsi untuk menentukan metode pengiriman data
+    -->
+    <form action="" method="get">
+        <!-- 
+            form berfungsi untuk membuat form di html
+            action berfungsi untuk membuat inputan di form
+            type berfungsi untuk menentukan tipe inputan
+            name berfungsi untuk menentukan nama inputan
+        -->
+        <label for="">Nama</label>
+        <input type="text" name="nama">
+    
+        <br>
+        <br>
+
+        <label for="">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password kamu">
+
+        <br>
+
+        <!-- 
+            checkbox berfungsi untuk menampilkan inputan berjenis checkbox
+         -->
+        <input type="checkbox" name="show" onclick="showpassword()">
+        <label for="password">Lihat Password</label>
+        <br>
+        <br>
+
+         <textarea name="pesan" id="" cols="30" rows="10" placeholder="pesan kamu"></textarea>
+
+         <br>
+         <br>
+
+        <label for="">Jenis Kelamin</label>
+        <select name="" id="">
+            <option value="">Laki-Laki</option>
+            <option value="">Perempuan</option>
+        </select>
+
+        <br>
+
+        <label for="">Jenis Kelamin</label>
+
+        <input type="radio" name="laki-laki" id="">
+        <label for="">Laki-laki</label>
+
+        <input type="radio" name="Perempuan" id="">
+        <label for="">Perempuan</label>
+
+        <br>
+        <br>
+        <!-- 
+            button type submit berfungsi untuk melakukan proses form
+            button type reset berfungsi untuk mereset form
+         -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>        
+    </form>
+
+    <!-- berfungsi untuk membuat element di tengah -->
+    <center>
+        <img src="" alt="">
+    </center>
+
+    <script>
+        function showpassword() {
+            var password = document.getElementById("password");
+            if (password.type === "password") {
+                password.type = "text";
+            } 
+            else {
+                password.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
